@@ -7,6 +7,7 @@ let port = process.env.PORT;
 const bodyParser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
+const file = require('./services/files');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json());
