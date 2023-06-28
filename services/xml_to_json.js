@@ -21,9 +21,8 @@ parser.parseString(xmlData, (err, result) => {
 });
 
   
-
+let headers ={}
     axios.post("https://graph.facebook.com/v17.0/107342319046752/messages",headers,body)
-  
       .then((res) => {
         console.log("Message has Sent", res);
       })
